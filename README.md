@@ -126,3 +126,30 @@ The process behavior observed matches expected normal behavior. No suspicious
 patterns such as incorrect path, multiple instances, or abnormal user execution were detected.
 
 ![services.exe Process Explorer](screenshots/day3-services.png)
+
+### Day 4 – Process Monitoring & Baseline Analysis
+
+#### Step 1: Observing Normal Process Behavior
+
+The goal of this step was to establish a baseline for CPU and memory usage of key Windows processes.
+
+**Observations:**
+
+- **lsass.exe**
+  - CPU: Mostly idle, occasional small spikes
+  - Memory: Stable, no rapid increase
+- **winlogon.exe**
+  - CPU: Idle
+  - Memory: Stable
+- **services.exe**
+  - CPU: Mostly idle
+  - Memory: Stable
+- **svchost.exe** (example instance)
+  - CPU: Low usage
+  - Memory: Stable
+
+**Summary:**  
+All critical processes were operating within expected ranges. No abnormal spikes or unusual memory behavior were observed.
+
+![Process Baseline](screenshots/day4-process-baseline.png)
+
