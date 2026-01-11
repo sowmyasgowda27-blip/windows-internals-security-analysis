@@ -32,9 +32,10 @@ This repository will include:
 - Lessons learned
 
 ## 🚀 Why This Project Matters
-Attackers often abuse trusted Windows processes to remain stealthy.
-Security analysts must understand what “normal” looks like in order
-to detect anomalies and respond effectively. Also, this is to help lot of beginners, aspiring to enter Cybersecurity.
+Understanding normal Windows process behavior is crucial for defensive
+security analysts to differentiate between legitimate and malicious activity.
+This baseline knowledge helps detect attacks like credential theft, privilege
+escalation, and process injection. :contentReference[oaicite:3]{index=3}
 
 ## Windows Internals Analysis
 ### Day 1 – Project Setup & Basics
@@ -76,7 +77,9 @@ to detect anomalies and respond effectively. Also, this is to help lot of beginn
 **Security Relevance:**
 lsass.exe is responsible for authentication and credential handling in Windows. 
 It is a high-value target for attackers, which is why Windows restricts access 
-to this process and hides certain details.
+to this process and hides certain details. LSASS is often targeted for credential dumping attacks because attackers try
+to read credentials directly from its memory. :contentReference[oaicite:2]{index=2}
+
 
 **Observations:**
 The process behavior observed matches expected normal behavior. No suspicious 
@@ -91,7 +94,7 @@ execution were detected.
 
 - Image Path: C:\Windows\System32\winlogon.exe
 - Verified Signer: Microsoft Windows
-- Parent Process: <Non-existent Process>
+- Parent Process: Non-existent Process
 - User Account: NT AUTHORITY\SYSTEM
 - Instances: 1
 
