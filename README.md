@@ -35,7 +35,7 @@ This repository will include:
 Understanding normal Windows process behavior is crucial for defensive
 security analysts to differentiate between legitimate and malicious activity.
 This baseline knowledge helps detect attacks like credential theft, privilege
-escalation, and process injection. :contentReference[oaicite:3]{index=3}
+escalation, and process injection.
 
 ## Windows Internals Analysis
 ### Day 1 – Project Setup & Basics
@@ -78,8 +78,7 @@ escalation, and process injection. :contentReference[oaicite:3]{index=3}
 lsass.exe is responsible for authentication and credential handling in Windows. 
 It is a high-value target for attackers, which is why Windows restricts access 
 to this process and hides certain details. LSASS is often targeted for credential dumping attacks because attackers try
-to read credentials directly from its memory. :contentReference[oaicite:2]{index=2}
-
+to read credentials directly from its memory.
 
 **Observations:**
 The process behavior observed matches expected normal behavior. No suspicious 
