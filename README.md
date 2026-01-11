@@ -151,5 +151,6 @@ The goal of this step was to establish a baseline for CPU and memory usage of ke
 **Summary:**  
 All critical processes were operating within expected ranges. No abnormal spikes or unusual memory behavior were observed.
 
-![Process Baseline](screenshots/day4-process-baseline.png)
+![Process Explorer showing baseline CPU and memory usage](screenshots/day4-process-baseline.png)
+
 
