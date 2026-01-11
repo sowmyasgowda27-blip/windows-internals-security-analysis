@@ -105,3 +105,22 @@ The process behavior observed matches expected normal behavior. No suspicious
 patterns such as incorrect path, multiple instances, or abnormal user execution were detected.
 
 ![winlogon.exe Process Explorer](screenshots/day3-winlogon.png)
+
+#### services.exe – Service Control Manager
+
+- Image Path: Access Denied (protected system process)
+- Verified Signer: Not displayed
+- Parent Process: wininit.exe
+- User Account: NT AUTHORITY\SYSTEM
+- Instances: 1
+
+**Security Relevance:**
+services.exe is responsible for managing Windows services. It is a critical 
+system process that runs with SYSTEM privileges. Attackers may target it 
+for service manipulation or persistence techniques.
+
+**Observations:**
+The process behavior observed matches expected normal behavior. No suspicious 
+patterns such as incorrect path, multiple instances, or abnormal user execution were detected.
+
+![services.exe Process Explorer](screenshots/day3-services.png)
