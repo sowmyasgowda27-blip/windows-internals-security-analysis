@@ -104,4 +104,4 @@ to manipulate logon sessions or bypass authentication.
 The process behavior observed matches expected normal behavior. No suspicious 
 patterns such as incorrect path, multiple instances, or abnormal user execution were detected.
 
-![winlogon.exe Process Explorer](Screenshots/day3-winlogon.png)
+![winlogon.exe Process Explorer](screenshots/day3-winlogon.png)
