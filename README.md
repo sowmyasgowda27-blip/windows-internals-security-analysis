@@ -82,3 +82,8 @@ to this process and hides certain details.
 The process behavior observed matches expected normal behavior. No suspicious 
 patterns such as multiple instances, unusual parent processes, or user-level 
 execution were detected.
+
+**Process Explorer Observation:**
+
+![lsass.exe Process Explorer](screenshots/day3-lsass.png)
+
