@@ -19,7 +19,7 @@ dumping or process masquerading.
 - Operating System: Windows 11
 - Analysis Tool: Sysinternals Process Explorer
 - Purpose: To analyze Windows internal processes from a security and defensive perspective
-- - Windows Event Viewer
+- Windows Event Viewer
 - PowerShell (basic commands)
 
 
@@ -69,7 +69,7 @@ escalation, and process injection.
 #### lsass.exe – Local Security Authority Subsystem Service
 
 - Image Path: Access Denied (protected system process)
-- Verified Signer: Not displayed
+- Verified Signer: Not shown (expected for protected system process)
 - Parent Process: wininit.exe
 - User Account: NT AUTHORITY\SYSTEM
 - Instances: 1
@@ -111,7 +111,7 @@ patterns such as incorrect path, multiple instances, or abnormal user execution 
 #### services.exe – Service Control Manager
 
 - Image Path: Access Denied (protected system process)
-- Verified Signer: Not displayed
+- Verified Signer: Not shown (expected for protected system process)
 - Parent Process: wininit.exe
 - User Account: NT AUTHORITY\SYSTEM
 - Instances: 1
