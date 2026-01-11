@@ -87,3 +87,20 @@ execution were detected.
 
 ![lsass.exe Process Explorer](screenshots/day3-lsass.png)
 
+#### winlogon.exe – Windows Logon Process
+
+- Image Path: C:\Windows\System32\winlogon.exe
+- Verified Signer: Microsoft Windows
+- Parent Process: <Non-existent Process>
+- User Account: NT AUTHORITY\SYSTEM
+- Instances: 1
+
+**Security Relevance:**
+winlogon.exe manages user logon and authentication in Windows. It requires 
+highest privileges (SYSTEM) and is a key target for attackers attempting 
+to manipulate logon sessions or bypass authentication.
+
+**Observations:**
+The process behavior observed matches expected normal behavior. No suspicious 
+patterns such as incorrect path, multiple instances, or abnormal user execution were detected.
+
